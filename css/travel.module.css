@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica';
+    overflow-x: hidden;
+}
+
+
+.travelpage {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.travelpage_block_one {
+    display: flex;
+    flex-direction: row;
+    margin-top: 65vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    gap: 5vw;
+    align-items: center;
+}
+
+.travelpage_first {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.travelpage_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.travelpage_button {
+    padding: 1.25rem 3rem;
+    border-radius: 1.25rem;
+    border: none;
+    font-family: 'Geologica';
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #18384C;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.travelpage_button:hover {
+    background-color: #18384C;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.travelpage_block_two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 5%;
+    background-color: white;
+}
+
+.content_block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.info {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #18384C;
+    margin-bottom: 5%;
+}
+
+.info_text {
+    font-size: 1.5rem;
+}
+
+.foto {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 30vh;
+}
+
+
+.travelpage_block_three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding: 5%;
+}
+
+.text_programm {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #18384C;
+    margin-bottom: 3%;
+}
+
+.text_type {
+    font-size: 1.5rem;
+}
+
+.text_view {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 15rem;
+    height: auto;
+    font-family: 'Geologica';
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-align: center;
+    color: #000000;
+}
+
+.block_info_obj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    border: 2px solid #18384C;
+    width: 40%;
+}
+
+.name_obj {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2%;
+}
+
+.info_obj {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #000000;
+}
+
+.foto_obj {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    margin-top: 5%;
+}
+
+.programm_info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+.travelpage_block_four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    background-color: white;
+}
+
+.travel_plan_text {
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #000000;
+}
+
+.days_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.day_num {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+.day_info {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+}
+
+.cost {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3%;
+    color: #18384C;
+    padding: 1%;
+    border: 0.3rem solid #D9D9D9;
+}
+
+.button_to_book {
+    margin-top: 3%;
+    border: none;
+    color: white;
+    background-color: #18384C;
+    font-family: 'Geologica';
+    border-radius: 1.25rem;
+    padding: 1% 2%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.button_to_book:hover {
+    background-color: #1f4f69;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .travelpage_text
+    {
+        margin-top: 50%;
+    }
+    .travelpage_block_one {
+        flex-direction: column;
+        text-align: center;
+        margin: 20vh auto 0;
+    }
+
+    .travelpage_first {
+        font-size: 2.5rem;
+    }
+
+    .travelpage_button {
+        font-size: 1.5rem;
+    }
+
+    .travelpage_block_two {
+        flex-direction: column;
+        padding-top: 20%;
+    }
+
+    .foto {
+        width: 80%;
+        height: 25vh;
+        margin-top: 3%;
+    }
+
+    .content_block {
+        width: 90%;
+    }
+
+    .programm_info {
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+    }
+
+    .block_info_obj {
+        width: 100%;
+    }
+
+    .day {
+        width: 80%;
+    }
+     .button_to_book {
+        font-size: 1.3rem;
+        border-radius: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .travelpage_first 
+    {
+        font-size: 2.5rem;
+    }
+
+    .travelpage_button 
+    {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .info 
+    {
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+
+    .info_text 
+    {
+        font-size: 1.2rem;
+        text-align: justify;
+        margin-bottom: 3%;
+    }
+
+    .foto_obj 
+    {
+        height: 25vh;
+    }
+
+    .text_programm {
+        font-size: 2rem;
+    }
+
+    .day_info {
+        font-size: 1.2rem;
+    }
+
+    .cost {
+        font-size: 2rem;
+        border-width: 0.2rem;
+    }
+
+    .button_to_book {
+        font-size: 1.3rem;
+        border-radius: 0.8rem;
+        padding: 1rem;
+    }
+    .travelpage_text
+    {
+        margin-top: 80%;
+    }
+}

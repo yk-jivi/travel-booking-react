@@ -1,0 +1,643 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* { 
+    box-sizing: inherit;
+    max-width: 100%;
+}
+
+.homepage {
+    background-image: url('../img/1.png'); 
+    background-size: cover;    
+    background-position: right top; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Навигация */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    gap: 15%;
+    flex-wrap: wrap;
+}
+
+/* Элементы навигации */
+.first {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #242441;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.first:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.points {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12vw;
+}
+
+.point {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.pointprog {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.point:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Главный текст*/
+.bel {
+    font-weight: bold;
+    font-size: 4vw;
+    background: linear-gradient(90deg, #1f4f69 10%, #83d4ff 90%);
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 6%;
+}
+
+/* О нас */
+.container_one {
+    padding-top: 5%;
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    background-color: white;
+}
+
+.about_us {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #18384C;
+    margin-bottom: 6%;
+}
+
+.foto {
+    background-image: url('../img/castle.png'); 
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50vh;
+    float: left;
+    border-radius: 1rem;
+}
+
+.text_about_us {
+
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #18384C;
+    margin: 3%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+}
+
+.container_for_text {
+    margin-left: 5%;
+    width: 60%;
+    height: auto;
+}
+
+/* Инфоблоки */
+.container_two {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background-color: white;
+}
+
+.heart {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #18384C;
+    margin-bottom: 5%;
+}
+
+.infoblock {
+    font-size: 1.5rem;
+    color: #18384C;
+}
+
+.block_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 20%;
+    min-width: 15rem;
+    padding: 1.25rem;
+    border: 0.125rem solid #18384C;
+    border-radius: 1rem;
+    margin: 1%;
+    overflow-wrap: break-word;
+}
+
+.container_three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #18384C;
+    padding: 6%;
+}
+
+.general_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.block_text {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 20rem;
+}
+
+.one_text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: white;
+    margin: 2rem 0;
+}
+
+.two_text,
+.three_text,
+.four_text {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.foto_Minsk {
+    background-image: url('../img/3.png'); 
+    background-size: cover;    
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 50vh;
+    float: left;
+    border: 0.625rem solid white;
+    border-radius: 1rem;
+}
+
+.line {
+    border: 0.063rem solid white;
+}
+
+.days_info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    gap: 2rem;
+}
+
+.day_block
+{
+    width: 20rem;
+}
+
+.day_block,
+.day_block_last {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.info_day {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: white;
+}
+
+/* Цена */
+.container_four {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.general_cost {
+    display: flex;
+    flex-direction: column;
+    color: #18384C;
+    padding: 2%;
+    border-bottom: 0.188rem solid #18384C;
+    border-left: 0.188rem solid #18384C;
+    border-right: 0.188rem solid #18384C;
+    width: 25%;
+    min-width: 16rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.cost_text {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.cost {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.to_book_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.to_book {
+    margin-top: 5%;
+    padding: 1.25rem 3rem;
+    border-radius: 1.25rem;
+    border: none;
+    font-family: 'Geologica';
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #18384C;
+    transition: background-color 0.3s ease;
+}
+
+.to_book:hover {
+    cursor: pointer;
+    background-color: #1f4f69;
+}
+
+.to_book_text {
+    font-size: 1.25rem;
+    color: #18384C;
+    margin-top: 1.5rem;
+}
+
+/* Кнопка вверх */
+.go_up {
+    display: flex;
+    justify-content: center;
+    bottom: 1%;
+    right: 1rem;
+    position: fixed;
+    background: white;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.go_up_text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #18384C;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.go_up_text:hover {
+    color: white;
+}
+
+.go_up:hover {
+    background-color: #18384C;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .bel {
+        font-size: 10vw;
+    }
+
+    .to_book
+    {
+        margin-top: 5%;
+    }
+
+    .container_one
+    {
+        margin-top: 30%;
+    }
+
+    .foto, .foto_Minsk {
+        width: 80%;
+        height: 40vh;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .block {
+        width: 40%;
+    }
+
+    .general_cost {
+        width: 50%;
+    }
+
+    .text {
+        margin: 5% auto;
+        align-items: center;
+    }
+
+    .navigation {
+        gap: 10%;
+        padding: 1rem;
+    }
+
+    .points {
+        gap: 6vw;
+    }
+
+    .first 
+    {
+        font-size: 1.5rem;
+        margin-top: 3%;
+    }
+    .text
+    {
+        margin-top: 30%;
+    }
+
+     .text_about_us
+    {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .foto_Minsk
+    {
+        margin-top: 10%;
+    }
+
+    .days_info
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+     .to_book_text
+     {
+        text-align: center;
+     }
+}
+
+/* Смартфоны */
+@media (max-width: 768px) {
+
+    .container_one
+    {
+        margin-top: 30rem;
+    }
+
+    .points
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .points {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .bel {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .text {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about_us {
+        font-size: 2rem;
+    }
+
+    .foto, .foto_Minsk {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .text_about_us {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block {
+        width: 80%;
+    }
+
+    .general_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block_text {
+        width: 90%;
+    }
+
+    .one_text {
+        font-size: 1.75rem;
+    }
+
+    .two_text,
+    .three_text,
+    .four_text {
+        font-size: 1.125rem;
+    }
+
+    .day {
+        font-size: 1.5rem;
+    }
+
+    .info_day {
+        font-size: 1rem;
+    }
+
+    .container_four {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .general_cost {
+        width: 80%;
+    }
+
+    .to_book {
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+    }
+
+    .to_book_text {
+        font-size: 1rem;
+    }
+
+    .go_up {
+        bottom: 2%;
+        right: 2%;
+    }
+
+    .go_up_text {
+        font-size: 1.25rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container_one
+    {
+        margin-top: 40rem;
+        padding-top: 10%;
+    }
+
+    .bel {
+        font-size: 12vw;
+        background: rgb(100, 174, 209);
+        background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    .about_us {
+        font-size: 1.75rem;
+        margin-top: 0;
+    }
+
+    .block {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .general_cost {
+        width: 100%;
+    }
+
+    .to_book {
+        font-size: 2rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .one_text {
+        font-size: 1.5rem;
+    }
+
+    .two_text,
+    .three_text,
+    .four_text {
+        font-size: 1rem;
+    }
+
+     .point
+     {
+        display: none;
+     }
+
+     .pointprog
+     {
+        font-size: 1.4rem;
+     }
+     
+     .container_for_text
+     {
+        margin-top: 10%;
+        margin-left: 0;
+     }
+     .text_about_us
+     {
+        font-size: 1.3rem;
+     }
+}
